@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Order Form</h1>
+  
+    <div class="content">
+        <form id="orderForm">
+            <p class="form-intro">We are excited to have you here. Please select a product and quantity, then add it to your order. Don't forget to calculate the total cost!</p>
+            
+            <label for="product">Select Product:</label>
+            <select id="product" name="product">
+                <option value="product1" data-price="10">Lip Stick - $10</option>
+                <option value="product2" data-price="20">Foundation - $20</option>
+                <option value="product3" data-price="30">Sun Screen - $30</option>
+            </select>
+            
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            
+            <button type="button" onclick="addProduct()">Add Product</button>
+            <button type="button" onclick="calculateTotal()">Calculate Total</button>
+        </form>
+        
+        <h2>Product List</h2>
+        <ul id="productList">
+            <!-- List of added products will be displayed here -->
+        </ul>
+        
+        <div id="totalCost">Total Cost: $0</div>
+    </div>
+
+    <aside class="advertisement">
+        <h2>Special Offer!</h2>
+        <p>Buy any two products and get a 20% store credit on your next order! Limited time offer.</p>
+        <p>Don't miss out on our latest beauty products! Visit our <a href="#">website</a> for more deals.</p>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
