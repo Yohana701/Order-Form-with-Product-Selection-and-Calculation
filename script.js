@@ -1,4 +1,3 @@
-// script.js
 function addProduct() {
     // Get form elements
     const productSelect = document.getElementById('product');
